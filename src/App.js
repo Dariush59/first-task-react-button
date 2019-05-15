@@ -1,26 +1,39 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import MyButton from './MyButton'
+import BtstrpButton from './BtstrpButton'
+
+import './App.css'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <div className="row border">
+          <div className="col text-center">
+            <p> First Task</p>
+            <BtstrpButton 
+                name="GREEN" 
+                color="yellow" 
+                backgroundColor="green" 
+                title="Green"/>
+            
+            <BtstrpButton 
+                name="RED"  
+                color="blue" 
+                backgroundColor="red" 
+                title="Red"/>
+          </div>
+        </div>
+        <div className="row border border-top-0">
+          <div className="col text-center">
+            <p> Extra Practice</p>
+            <MyButton />
+            <MyButton />       
+          </div>
+        </div>
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
